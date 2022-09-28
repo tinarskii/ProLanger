@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* { @apply dark:text-white duration-100; }
+* { @apply dark:text-white; }
 
 h1, h2, h3, h4, h5, h6, p, span {
   font-family: 'Kanit', sans-serif;
@@ -14,7 +14,7 @@ input, a, button {
   font-family: 'Sarabun', sans-serif;
 }
 
-.main-container { @apply grid h-screen place-items-center dark:bg-black; }
+.main-container { @apply grid min-h-screen py-16 place-items-center bg-gradient-to-bl from-yellow-200 via-green-200 to-blue-200 dark:from-violet-900 dark:to-black }
 
 .page-container { @apply flex flex-col gap-6 items-center justify-center w-full; }
 

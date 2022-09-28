@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="/public/web.png" width="150">
+  <img src="/public/assets/web.png" width="150">
   <h1 align="center">
-    WrongLang - Web Application
+    ProLanger - Web Application
   </h1>
   <p align="center">
-    เว็บแอปพลิเคชั่นที่จะช่วยให้เวลาคุณพิมพ์แบบลืมเปลี่ยนภาษานั้นสลับให้ง่ายขึ้นทันที!
+    Create your own weird translator!
   </p>
 </p>
 
