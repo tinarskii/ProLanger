@@ -1,6 +1,18 @@
-// User input text
-import {createSignal} from "solid-js";
+import { createSignal } from "solid-js";
 
+// User input text
 export const [text, setText] = createSignal("");
 // Converted text
 export const [convertedText, setConvertedText] = createSignal("");
+
+// Convert function
+export function convert() {
+  setConvertedText(
+    text()
+      .split("")
+      .map((char) => {
+        return char + " ";
+      })
+      .join("")
+  );
+}
