@@ -6,7 +6,7 @@ import {
   text,
 } from "../scripts/KaeRae";
 
-const wrongLang: Component = () => {
+const KaeRae: Component = () => {
   createEffect(() => {
     convert();
   });
@@ -47,4 +47,4 @@ const wrongLang: Component = () => {
   );
 };
 
-export default wrongLang;
+export default KaeRae;
