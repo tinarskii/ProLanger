@@ -7,6 +7,23 @@ export const [text, setText] = createSignal("");
 // Converted text
 export const [convertedText, setConvertedText] = createSignal("");
 
+// Thai layout name
+export const thLayoutName = {
+  Kedmanee: "เกษมณี",
+  Pattachotee: "ปัตตะโชติ",
+  Manoonchai: "มนูญชัย",
+  Qwerty: "เควอร์ตี",
+  Dvorak: "ดีโวแร็ค",
+  Colemak: "โคล์เม็ค",
+};
+
+// Thai mode name
+export const thMode = {
+  "To Thai": "เป็นไทย",
+  "To English": "เป็นอังกฤษ",
+  Unshift: "ยกเลิกตรึงอักษร",
+};
+
 // Available keyboard layout
 export const layout = {
   // Thai keyboard layout

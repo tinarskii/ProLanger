@@ -9,6 +9,7 @@
 </p>
 
 # Guide for contributors
+- Add your translator options in `src/lib/options.ts` (Optional)
 - Add your translation script to `src/scripts` folder
 - Create a TSX file in `src/translator` with the same name as your script
 - Add your translator information to `src/routes.ts`

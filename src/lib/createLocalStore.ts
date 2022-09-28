@@ -1,5 +1,6 @@
 import { createStore, SetStoreFunction, Store } from "solid-js/store";
 import { createEffect } from "solid-js";
+import { opt } from "./options";
 
 export function createLocalStore<T>(
   initState: T
@@ -12,16 +13,6 @@ export function createLocalStore<T>(
   );
   return [state, setState];
 }
-
-let opt = {
-  wrongLang: {
-    mode: "To Thai",
-    layout: {
-      thai: "Kedmanee",
-      eng: "Qwerty",
-    },
-  },
-};
 
 export const [state, setState] = createLocalStore({
   ...opt,
