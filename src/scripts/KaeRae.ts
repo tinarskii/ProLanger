@@ -11,8 +11,9 @@ export function convert() {
     text()
       .split("")
       .map((char) => {
-        return char + " ";
+        return ("ิีึ์ุูั่้๊๋".includes(char) ? "" : " ") + char;
       })
       .join("")
+      .trimStart()
   );
 }
