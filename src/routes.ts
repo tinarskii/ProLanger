@@ -24,4 +24,12 @@ export const routes = [
     path: "/kazuya",
     component: lazy(() => import("./translator/KaeRae")),
   },
+  {
+    _name: "toSkoy",
+    _author: "Tinarskii",
+    _authorURL: "https://www.tinarskii.com/",
+    _description: "เเอปเเปลงพ๊ษ๊ไธญเป็นภ๊ษ๊สก๊อบ์ย (รุ่นใหฒ่ล่๊ษุฎ)",
+    path: "/toSkoy",
+    component: lazy(() => import("./translator/toSkoy")),
+  },
 ];
