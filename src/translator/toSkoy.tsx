@@ -2,6 +2,7 @@ import { Component, createEffect } from "solid-js";
 import {
   convert,
   convertedText,
+  copyToClipboard,
   setText,
   text,
 } from "../scripts/toSkoy";
@@ -45,7 +46,7 @@ const toSkoy: Component = () => {
             type="button"
             class="w-full p-2 bg-transparent rounded-lg text-blue-500 border-2 border-blue-500 active:bg-blue-500 active:text-white duration-200"
             value="ก๊อป"
-            onClick={(e) => e.target.value = "ก๊อปแล้ว"}
+            onClick={(e) => copyToClipboard(e.target as HTMLInputElement, convertedText())}
           />
         </div>
       </div>

@@ -25,18 +25,6 @@ const App: Component = () => {
           <i class="fa-solid fa-house text-2xl" />
         </Link>
       </div>
-
-      {/* Bottom Bar Elements */}
-      <div class="absolute bottom-4 right-4">
-        <div class="flex flex-row gap-2">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprolanger.wrong-lang.click%2F&quote=Create your own weird text translator!">
-            <i class="fa-brands fa-facebook text-2xl"></i>
-          </a>
-          <a href="https://twitter.com/intent/tweet/?text=Create your own weird text translator!&hashtags=wronglang&via=tinarskii&related=&url=https://prolanger.wrong-lang.click/">
-            <i class="fa-brands fa-twitter text-2xl"></i>
-          </a>
-        </div>
-      </div>
       <Routes />
     </main>
   );

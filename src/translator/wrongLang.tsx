@@ -3,6 +3,7 @@ import { setState, state } from "../lib/createLocalStore";
 import {
   convert,
   convertedText,
+  copyToClipboard,
   layout,
   modes,
   setText,
@@ -67,6 +68,12 @@ const wrongLang: Component = () => {
             class="input-box"
             placeholder={"ข้อความที่แปลงแล้วจะปรากฎ..."}
             value={convertedText()}
+          />
+          <input
+            type="button"
+            class="w-full p-2 bg-transparent rounded-lg text-blue-500 border-2 border-blue-500 active:bg-blue-500 active:text-white duration-200"
+            value="คัดลอก"
+            onClick={(e) => copyToClipboard(e.target as HTMLInputElement, convertedText())}
           />
         </div>
 

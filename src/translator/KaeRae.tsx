@@ -2,6 +2,7 @@ import { Component, createEffect } from "solid-js";
 import {
   convert,
   convertedText,
+  copyToClipboard,
   setText,
   text,
 } from "../scripts/KaeRae";
@@ -40,6 +41,12 @@ const KaeRae: Component = () => {
             class="input-box"
             placeholder={"ข้อความที่แปลงแล้วจะปรากฎ..."}
             value={convertedText()}
+          />
+          <input
+            type="button"
+            class="w-full p-2 bg-transparent rounded-lg text-blue-500 border-2 border-blue-500 active:bg-blue-500 active:text-white duration-200"
+            value="ล อ ก เ ลี ย น แ บ บ"
+            onClick={(e) => copyToClipboard(e.target as HTMLInputElement, convertedText())}
           />
         </div>
       </div>

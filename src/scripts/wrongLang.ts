@@ -120,3 +120,9 @@ export function convert() {
     );
   }
 }
+
+// Copy to Clipboard
+export function copyToClipboard(evt: HTMLInputElement|any, cTxt: string, cpTxt?: string): void {
+  navigator.clipboard.writeText(cTxt);
+  alert(cpTxt || "คัดลอกแล้ว");
+}
